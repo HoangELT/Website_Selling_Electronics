@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Đăng ký</title>
+        <!-- biểu tượng -->
+        <link rel="icon" type="image/png" href="img/icon/store.webp">
+        <!-- các thẻ meta  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+        <!-- truyền file css-->
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        
+    </head>
+    <body>
+        
+        <!-- start login-------------------------------------------------->
+        <div>
+            <div>
+                <div>
+                    <form  >
+                      <div class="dangky">
+                        <h1>Đăng ký</h1>
+                        <hr>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Nhập Email" name="email" id="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="password" id="password" required>
+                        
+                        <label for="psw-repeat"><b>Nhập lại Password</b></label>
+                        <input type="password" placeholder="Nhập lại Password" name="password1" id="password1" required>
+                        <input type="checkbox" onclick="myFunction()">Hiện mật khẩu
+                        <p>Bằng việc đăng ký, bạn đã đồng ý với MIE STORE về <a href="#">Điều khoản dịch vụ & Chính sách bảo mật</a>.</p>
+
+                        <button type="submit" class="btn">Đăng ký</button>
+                      </div>
+                      
+                      <div class="dangky dangnhap">
+                        <p>Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a>.</p>
+                      </div>
+                </div>
+            </div>                
+        </div>
+        <!-- end login---------------------------------------------------->
+        
+    </body>
+    <!--start hiện mật khẩu---------------------------------------------->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("password");
+          var x1 = document.getElementById("password1");
+          if (x.type === "password"||x1.type === "password") {
+            x.type = "text";
+            x1.type = "text";
+          } else {
+            x.type = "password";
+            x1.type = "password";
+          }
+        }
+    </script>
+    <!--end hiện mật khẩu---------------------------------------------->
+</html>
