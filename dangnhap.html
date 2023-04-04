@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Đăng nhập</title>
+        <!-- biểu tượng -->
+        <link rel="icon" type="image/png" href="img/icon/store.webp">
+        <!-- các thẻ meta  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/icon_fafa.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+        <!-- truyền file css-->
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+    </head>
+    <body>
+        <div>
+            <div>
+                <div>
+                    <form >
+                      <div class="dangnhap">
+                        <h1>Đăng nhập</h1>
+                        <hr>
+
+                        <label for="tk"><b>Tài khoản</b></label>
+                        <input type="text" placeholder="Tên đăng nhập" name="tk" id="tk" required>
+
+                        <label for="mk"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="password" id="password" required>
+                        <input type="checkbox" onclick="myFunction()">Hiện mật khẩu
+                        <br><br>
+                        <div class="kengang">
+                            <span class="or-kengang">or</span>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="fb btn">
+                                <i class="fa fa-facebook fa-fw"></i>Facebook
+                            </a>
+
+                            <a href="#" class="twitter btn">
+                                <i class="fa fa-twitter fa-fw"></i>Twitter
+                            </a>
+                            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                                </i>Google+
+                            </a>
+                        </div>
+
+                        <p> <a href="#">Quên mật khẩu?</a></p>
+
+                        <button type="submit" class="btn">Đăng nhập</button>
+                      </div>
+                      
+                      <div class="dangky dangnhap">
+                        <p>Bạn chưa có tài khoản? <a href="dangky.html">Đăng ký</a>.</p>
+                      </div>
+                </div>
+            </div>                
+        </div>
+        <!-- end login---------------------------------------------------->
+
+    </body>
+    <!--start hiện mật khẩu---------------------------------------------->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+    </script>
+    <!--end hiện mật khẩu---------------------------------------------->
+</html>
