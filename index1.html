@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <mate charset="UTP-8">
-    <mate name="viewport" content="width-device_width, initial-scale=1.0">
-    <script src="https://kit.fortawesome.com/1147660ae7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Web Ban Hang the thao</title>
+        <mate name="viewport" content="width-device_width, initial-scale=1.0">
+            <script src="https://kit.fortawesome.com/1147660ae7.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="style.css">
+            <title>Web Ban Hang the thao</title>
 </head>
+
 <body>
-<header>
-    <div class="logo">
-        <img src="images\download.jfif">
-    </div>
-    <div class="menu">
-        <li><a href="">NỮ</a>
-            <ul class="sub-menu">
-                <li><a href="">Hàng mới về</a></li>
-                <li><a href="">Collection</a></li>
-                <li><a href="">Áo</a>
-                    <ul>
-                        <li><a href="">Áo sơ mi</a></li>
-                        <li><a href="">Áo thun</a></li>
-                        <li><a href="">Áo khoác</a></li>
-                        <li><a href="">Áo len</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Quần</a>
-                    <ul>
-                        <li><a href="">Quần dài</a></li>
-                        <li><a href="">Quần lửng</a></li>
-                        <li><a href="">Quần kaki</a></li>
-                    </ul>
-                </li>
-            </ul>
-        <li><a href="">NAM</a></li>
-        <li><a href="">TRẺ EM</a></li>
-        <li><a href="">BST</a></li>
-        <li><a href="">THÔNG TIN</a></li>
+    <header>
+        <div class="logo">
+            <img src="images\download.jfif">
+        </div>
+        <div class="menu">
+            <li><a href="">NỮ</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo khoác</a></li>
+                            <li><a href="">Áo len</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần dài</a></li>
+                            <li><a href="">Quần lửng</a></li>
+                            <li><a href="">Quần kaki</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <li><a href="">NAM</a></li>
+            <li><a href="">TRẺ EM</a></li>
+            <li><a href="">BST</a></li>
+            <li><a href="">THÔNG TIN</a></li>
         </div>
         <div class="others">
             <Li>
-                <input placeholder = "Tìm kiếm"> <i class="fas fa-search"></i>
+                <input placeholder="Tìm kiếm"> <i class="fas fa-search"></i>
             </Li>
             <li>
                 <a class="fa fa-paw" href=""></a>
@@ -52,14 +54,48 @@
                 <a class="fa fa-shopping-bag" href=""></a>
             </li>
         </div>
+        </div>
+
+
+        <!-- Phan 3 -->
+
+
+
+    </header>
+
+    <section class="app-container">
+        <p>Tải ứng dụng IVY moda</p>
+        <div class="app-google">
+            <img src="" alt="Ảnh appstore" class="">
+            <img src="" alt="ảnh gg play" class="">
+        </div>
+        <p>Nhận bản tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn..." class="">
+
+    </section>
+
+
+
+    <div class="footer-top">
+        <li><a href=""><img src="" alt="thông báo ngoại thương" class=""></a></li>
+        <li><a href=""></a>Liên hệ</li>
+        <li><a href=""></a>Tuyển dụng</li>
+        <li><a href=""></a>Giới thiệu</li>
+        <li>
+            <a href="fab fa-facebook"></a>
+            <a href="fab fa-twitter"></a>
+            <a href="fab fa-youtube"></a>
+        </li>
     </div>
-
-
-    <!-- Phan 3 -->
-
-
-   
-</header>
+    <div class="footer-center">
+        <p>Công ty Cổ phần Dự kim với sổ đăng ký kinh doanh: 01012123132 <br>
+            Địa chỉ đăng ký: Tổ dân phố Tháp. P.Đại Mỗ, Q.Nam Từ Liê, TP.Hà Nội, Việt Nam - 0243 205 2222 <br>
+            đặt hàng online : <span>0246 662 3434</span>
+        </p>
+    </div>
+    <div class="footer-bottom">
+        Ivymoda All rights reserved
+    </div>
 
 </body>
 <script>
@@ -69,25 +105,26 @@
     let imgNumber = imgPosition.length
     //console.log(imgPosition)
     let index = 0;
-    imgPosition.forEach(function(img, index){
-        img.style.left = index*100 + "%"
-        dotItem[index].addEventListener("click", function(){
-        slider(index)
+    imgPosition.forEach(function (img, index) {
+        img.style.left = index * 100 + "%"
+        dotItem[index].addEventListener("click", function () {
+            slider(index)
         })
     })
-    function imgSlide(){
+    function imgSlide() {
         index++;
-        if(index >= imgNumber){
+        if (index >= imgNumber) {
             index = 0
         }
         slider(index)
     }
-    function sider(index){
-        imgContainer.style.left = "-"+ index*100 +"%"
+    function sider(index) {
+        imgContainer.style.left = "-" + index * 100 + "%"
         const dotActive = document.querySelector(".active")
         dotActive.classList.remove("active")
         dotItem[index].classList.add("active")
     }
     setInterval(imgSlide, 5000)
 </script>
+
 </html>
