@@ -11,6 +11,7 @@ li{
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
 header{
@@ -30,7 +31,11 @@ header{
     display: flex;
 }
 .menu > li{
+    font-size: 0 12px;
+}
+.menu > li a{
     padding: 0 12px;
+    font-weight: bold;
 }
 
 .others{
@@ -39,4 +44,18 @@ header{
 
 .others > li{
     padding: 0 12px;
+}
+
+.other > li:first-child {
+    position: relative;
+}
+.other > li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #3333;
+}
+
+.other > li:first-child i{
+    position: absolute;
+    right: 10px;
 }
