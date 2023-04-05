@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #Slider{
      padding-bottom: 30px;
      border-bottom: 2px solid;
@@ -38,7 +38,7 @@
 }
 .dot.active{
      background-color: #333;
-=======
+}
 *{
     margin: 0;
     padding: 0;
@@ -72,11 +72,18 @@ header{
     display: flex;
 }
 .menu > li{
-    font-size: 0 12px;
-}
-.menu > li a{
     padding: 0 12px;
-    font-weight: bold;
+    position: relative;
+}
+.menu > li:hover .sub-menu{
+    visibility: visible;
+    top:30px;
+}
+.menu li a{
+    font-size: 0 12px;
+    font-weight: bold!important;
+    display: block;
+    line-height: 35px;
 }
 
 .others{
@@ -85,9 +92,24 @@ header{
 
 .others > li{
     padding: 0 12px;
-<<<<<<< HEAD
+    position: relative;
 }
-
+.sub-menu{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.3s;
+}
+.sub-menu ul{
+    padding-left: 20px;
+}
+.sub-menu ul a{
+    font-weight: normal!important;
+    font-size: 12px!important;
+}
 .other > li:first-child {
     position: relative;
 }
@@ -100,7 +122,5 @@ header{
 .other > li:first-child i{
     position: absolute;
     right: 10px;
-=======
->>>>>>> 5808043fa067c2d414ea1b151214fbfd52bcf0e2
->>>>>>> 1795f7acd12700412b5a9b49ee56167a1cc24bfe
+
 }
