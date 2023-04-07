@@ -35,7 +35,7 @@
      z-index: 999;
      background-color: rgba(255, 255, 255, 0.3);
      transition: all 0.3s ease;
- 
+    font-size: 20px;
  }
  .top.active {
      background-color: rgba(255, 255, 255, 1);

@@ -166,6 +166,8 @@
  /* --------------Product-Relate-------------------------------------- */
  .product-related {
      margin-bottom: 50px;
+     border:2px #cccccc solid;
+     background-color: snow;
  }
  .product-related-title {
      margin: 20px 0;
@@ -174,7 +176,8 @@
      font-family: var(--main-text-font);
      font-size: 14px;
      font-weight: bold;
-     color: #333333;
+     color:gold;
+     
  }
  .product-related-item {
      width: 20%;
