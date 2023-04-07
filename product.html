@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/cartegory.css">
@@ -20,15 +22,16 @@
     <title>Sản Phẩm</title>
     <link rel="shortcut icon" href="image/logo/logo-tabbar.ico">
 </head>
+
 <body>
     <secsion class="top">
         <div class="container">
             <div class="row">
-                <div class="top-logo">
-                    </a><a href="index.html"><img src="image/logo/logo.png" alt="">
-                </div>
                 <div class="top-menu-items">
                     <ul>
+                        <div class="top-logo">
+                            </a><a href="index.html"><img src="image/logo/logo1.png" alt="">
+                        </div>
                         <li>Nữ
                             <ul class="top-menu-item">
                                 <li>
@@ -144,7 +147,7 @@
                     <span class="close"><i class="fas fa-times fa-lg" style="color: white;"></i></span>
                     <div class="form-login login-box">
                         <form action="#" class="">
-                            <h2><img src="image/logo/logo1.png" alt=""></h2> 
+                            <h2><img src="image/logo/logo1.png" alt=""></h2>
                             <div class="input-box">
                                 <i class="icon"></i>
                                 <input type="user" required class="">
@@ -195,25 +198,187 @@
                 </div>
             </div>
         </div>
-        
+
     </secsion>
+    <!-- --------------------------Product-------------------------------- -->
+    <section class="product">
+        <div class="container">
+            <!-- <div class="product-top row">
+                <p>Trang chủ</p> <span>⟶	</span> <p>Nam</p> <span>⟶</span> <p>Quần</p><span>⟶</span> <p>Áo Polo thun viền cổ</p>
+            </div> -->
+            <div class="product-content row">
+                <div class="product-content-left row">
+                    <div class="product-content-left-big-img">
+                        <img src="image/maintop/slide1.jpg" alt="">
+                    </div>
+                    <div class="product-content-left-small-img">
+                        <img src="image/maintop/slide1.jpg" alt="">
+                        <img src="image/maintop/slide1.jpg" alt="">
+                        <img src="image/maintop/slide1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="product-content-right">
+                    <div class="product-content-right-product-name">
+                        <h1>Áo Polo thun viền cổ MS 57E3355</h1>
+                        <p>MSP: 57E3355</p>
+                    </div>
+                    <div class="product-content-right-product-price">
+                        <p>1.743.000<sup>đ</sup></p>
+                    </div>
+                    <div class="product-content-right-product-color">
+                        <p><span style="font-weight: bold;">Màu sắc</span>:Xanh <span style="color: rgb(1, 6, 80);">*</span></p>
+                        <div class="product-content-right-product-color-img">
+                            <img src="https://pubcdn.ivymoda.com/metagent/assets/images/color/048.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product-content-right-product-size">
+                        <p style="font-weight: bold;">Size:</p>
+                        <div class="size">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <p style="font-weight: bold;">Số lượng:</p>
+                        <input type="number" min="0" value="1"> 
+                    </div>
+                    <p style="color: rgb(1, 6, 80);">Vui lòng chọn size</p>
+                    <div class="product-content-right-product-button">
+                        <a href="cart.html"><button><i class="fas fa-shopping-cart"></i> <p>MUA HÀNG</p></button></a>
+                        <button><p>TÌM TẠI CỬA HÀNG</p></button>
+                    </div>
+                    <div class="product-content-right-product-icon">
+                        <div class="product-content-right-product-icon-item">
+                            <i class="fas fa-phone-alt"></i> <p>Hotline</p>
+                        </div>
+                        <div class="product-content-right-product-icon-item">
+                            <i class="far fa-comments"></i> <p>Chat</p>
+                        </div>
+                        <div class="product-content-right-product-icon-item">
+                            <i class="far fa-envelope"></i><p>Mail</p>
+                        </div>
+                    </div>
+                    <div class="product-content-right-product-QR">
+                        <img src="image/bank/qrcode2.png" alt="">
+                    </div>
+                    <div class="product-content-right-bottom">
+                        <div class="product-content-right-bottom-top">
+                            -
+                        </div>
+                        <div class="product-content-right-bottom-content-big">
+                            <div class="product-content-right-bottom-content-title row">
+                                <div class="product-content-right-bottom-content-title-item chitiet">
+                                        <p>Chi tiết</p>
+                                </div>
+                                <div class="product-content-right-bottom-content-title-item baoquan">
+                                        <p>Bảo quản</p>
+                                </div>
+                                <div class="product-content-right-bottom-content-title-item">
+                                    <p>Tham khảo size</p>
+                                </div>
+                            </div>
+                            <div class="product-content-right-bottom-content">
+                                <div class="product-content-right-bottom-content-chitiet">
+                                    Áo Polo dáng regular fit.Phần tay áo được bo viền..<br><br>
+                                     - Thiết kế cổ áo phối viền khác màu cùng hàng 3 khuy cài<br><br> 
+                                     - Chất vải thun thoải mái, mát mẻ<br><br> 
+                                     - Sản xuất năm 2022 tại Việt Nam <br><br>
+                                     Lưu ý: Màu sắc sản phẩm thực tế sẽ có sự chênh lệch nhỏ so với ảnh<br><br>
+                                    do điều kiện ánh sáng khi chụp và màu sắc hiển thị qua mản hình máy tính/ điện thoại.<br><br>
+                                    <br><br>
+
+                                    
+                                </div>
+                                <div class="product-content-right-bottom-content-baoquan">
+                                    Chi tiết bảo quản sản phẩm : <br><br>
+
+* Vải dệt kim : sau khi giặt sản phẩm phải được phơi ngang tránh bai dãn.<br><br>
+
+* Vải thô , tuytsy , kaki không có phối hay trang trí đá cườm thì có thể giặt máy.<br><br>
+
+* Đồ Jeans nên hạn chế giặt bằng máy giặt vì sẽ làm phai màu jeans.Nếu giặt thì nên lộn trái sản phẩm khi giặt , đóng khuy , kéo khóa, không nên giặt chung cùng đồ sáng màu , tránh dính màu vào các sản phẩm khác.<br><br> 
+
+* Các sản phẩm cần được giặt ngay không ngâm tránh bị loang màu , phân biệt màu và loại vải để tránh trường hợp vải phai. Không nên giặt sản phẩm với xà phòng có chất tẩy mạnh , nên giặt cùng xà phòng pha loãng.<br><br>
+
+* Các sản phẩm có thể giặt bằng máy thì chỉ nên để chế độ giặt nhẹ , vắt mức trung bình và nên phân các loại sản phẩm cùng màu và cùng loại vải khi giặt.<br><br>
+
+* Nên phơi sản phẩm tại chỗ thoáng mát , tránh ánh nắng trực tiếp sẽ dễ bị phai bạc màu , nên làm khô quần áo bằng cách phơi ở những điểm gió sẽ giữ màu vải tốt hơn.<br><br>
+
+* Những chất vải 100% cotton , không nên phơi sản phẩm bằng mắc áo mà nên vắt ngang sản phẩm lên dây phơi để tránh tình trạng rạn vải.<br><br>
+
+* Khi ủi sản phẩm bằng bàn là và sử dụng chế độ hơi nước sẽ làm cho sản phẩm dễ ủi phẳng , mát và không bị cháy , giữ màu sản phẩm được đẹp và bền lâu hơn. Nhiệt độ của bàn là tùy theo từng loại vải.<br><br> 
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- "product-related"------------------- -->
+    <section class="product-related container">
+        <div class="product-related-title">
+            <p>SẢN PHẨM LIÊN QUAN</p>
+        </div>
+        <div class=" row product-content">
+            <div class="product-related-item">
+                <img src="image/maintop/slide1.jpg" alt="">
+                <h1>Áo Polo thun viền cổ MS 57E3355</h1>
+                <p> 1.743.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <img src="image/maintop/slide1.jpg" alt="">
+                <h1>Áo Polo thun viền cổ MS 57E3355</h1>
+                <p> 1.743.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <img src="image/maintop/slide1.jpg" alt="">
+                <h1>Áo Polo thun viền cổ MS 57E3355</h1>
+                <p> 1.743.000<sup>đ</sup></p>
+            </div>
+            </div>
+        </div>
+    </section>
     <!-- -------------------------Footer -->
     <section class="footer">
-        <div class="footer-container">
-            <div class="footer-items">
-                <li><a href=""><img src="image/bank/dathongbao.png" alt=""></a></li>
-                <li><a href="">Liên hệ</a></li>
-                <li><a href="">Tuyển dụng</a></li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-youtube"></i></a></li>
-            </div>
-            <div class="footer-text">
-                Công ty trách nhiệm 3 thành viên: 012346789<br>
-                Địa chỉ đăng ký: Tp. Bảo Lộc, Lâm Đồng, Việt Nam - 1234569874 <br>
-                Đặt hàng online :1800-1880.
-            </div>
-            <div class="footer-bottom">
-                ©HKD Sports All rights reserved
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row text-md-left">
+                <div class="col-md-3">
+                    <img src="image/logo/logo1.png" alt="logo" class="">
+                    <p class="info-p">Chúng tôi là cửa hàng chuyên cung cấp đồ đá bóng chất lượng cao, đa dạng về mẫu mã và giá cả
+                        hợp lý. Với đội ngũ nhân viên tận tâm và nhiệt tình, chúng tôi cam kết mang lại cho khách
+                        hàng sự hài lòng và tin tưởng khi mua sắm tại cửa hàng của chúng tôi.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 mb-4 text-info>Danh mục sản phẩm</h5>
+                    <hr class="mb-3">
+                    <p>Quần áo nam</p>
+                    <p>Quần áo nữ</p>
+                    <p>Phụ kiện thể thao</p>
+                    <p>Giày thể thao</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 mb-4 text-info>Thông tin liên hệ</h5>
+                    <hr class="mb-3">
+                    <p>Địa chỉ: Campuchia</p>
+                    <p>Hotline: 0999999999</p>
+                    <p>Fax: 1235456789</p>
+                    <p>Email: dangdeptrai@gmail.com</p>
+                </div>
+                <div class="col-md-3 ">
+                    <h5 mb-4 text-info>Kết nối với chúng tôi</h5>
+                    <hr class="mb-3">
+                    <a href="https://www.youtube.com/" class=""><i class="fab fa-youtube" style="color: #eb2c0a;"></i> Youtube</a><br>
+                    <a href="https://www.instagram.com/" class=""><i class="fab fa-instagram" style="color: #d15c47;"></i>  Instagram</a><br>
+                    <a href="https://www.tiktok.com/" class=""><i class="fab fa-tiktok" style="color: #2e3747;"></i> Tiktok</a><br>
+                    <a href="https://www.facebook.com/" class=""><i class="fab fa-facebook" style="color: #4c50c8;"></i> Facebook</a><br>
+                </div>
             </div>
         </div>
     </section>
@@ -222,4 +387,5 @@
     <script src="js/slidecart.js"></script>
     <script src="js/login.js"></script>
 </body>
-</html>                    
+
+</html>                     

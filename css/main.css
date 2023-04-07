@@ -46,6 +46,8 @@
  
  .top-logo {
      flex: 1;
+     padding: 0 20px;
+     display: inline-flex;
  }
  .top-menu-items {
      flex: 3;
@@ -57,12 +59,12 @@
  }
  .top-menu-items > ul > li {
      font-family: var(--main-text-font);
-     padding: 0 12px;
+     padding: 0 15px;
      height: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
-     font-size: 12px;
+     font-size: 15px;
      text-transform: uppercase;
      font-weight: bold;
      cursor: pointer;
