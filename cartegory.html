@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="css/payment.css">
     <link rel="stylesheet" href="css/delivery.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <title>Danh Mục Sản Phẩm</title>
+    <link rel="shortcut icon" href="image/logo/logo-tabbar.ico">
 </head>
 
 <body>
@@ -54,20 +56,45 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Top Bán chạy
+                        <li>Quần Áo Bóng Đá
                             <ul class="top-menu-item">
                                 <li>
-                                    <a href="cartegory.html">Áo</a>
+                                    <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
                                 </li>
                                 <li>
-                                    <a href="cartegory.html">Quần</a>
+                                    <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
                                 </li>
                                 <li>
-                                    <a href="cartegory.html">Giày</a>
+                                    <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu giày nam nữ mới</a>
                                 </li>
                             </ul>
                         </li>
                         <li>Thông tin
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu giày nam nữ mới</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Trợ Giúp
                             <ul class="top-menu-item">
                                 <li>
                                     <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
@@ -103,7 +130,7 @@
                             </script>
                         </li>
                         <li>
-                            <a href="login.html"><i class="fas fa-user"></i></a>
+                            <i class="fas fa-user pop-up"></i>
                         </li>
                         <li>
                             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
@@ -112,15 +139,72 @@
                 </div>
             </div>
         </div>
-        
+        <div class="login-container">
+            <div class="login-body">
+                <div class="wrapper">
+                    <span class="close"><i class="fas fa-times fa-lg" style="color: white;"></i></span>
+                    <div class="form-login login-box">
+                        <form action="#" class="">
+                            <h2><img src="image/logo/logo1.png" alt=""></h2>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="user" required class="">
+                                <label>Tên đăng nhập</label>
+                            </div>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="password" required class="">
+                                <label>Mật khẩu</label>
+                            </div>
+                            <div class="forgot-password">
+                                <label><input type="checkbox" class="">Ghi nhớ đăng nhập</label>
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
+                            <button type="submit" class="btn-login">Đăng nhập</button>
+                            <div class="register">
+                                <p>Chưa có tài khoản? <a href="#" class="register-link">Đăng ký</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-login register-box">
+                        <form action="#" class="">
+                            <h2><img src="image/logo/logo1.png" alt=""></h2>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="user" required class="">
+                                <label>Tên đăng nhập</label>
+                            </div>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="mail" required class="">
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="password" required class="">
+                                <label>Mật khẩu</label>
+                            </div>
+                            <div class="forgot-password">
+                                <label><input type="checkbox" class="">Tôi đồng ý với các điều khoản & điều kiện</label>
+                            </div>
+                            <button type="submit" class="btn-register">Đăng ký</button>
+                            <div class="register">
+                                <p>Đã có tài khoản? <a href="#" class="login-link">Đăng nhập</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </secsion>
 
     <!-- -------------------------Cartegory----------------------------------- -->
     <section class="cartegory">
         <div class="container">
-            <div class="cartegory-top row">
+            <!-- <div class="cartegory-top row">
                 <p>Trang chủ</p> <span>⟶	</span> <p>Nam</p> <span>⟶</span> <p>Hàng nam mới về</p>
-            </div>
+            </div> -->
         </div>
         <div class="container">
             <div class="row">
@@ -154,11 +238,11 @@
                     </div>
                     <div class="cartegory-right-top-item">
                         <select name="" id="">
-                        <option value="">Bộ Lọc</option>
-                        <option value="">Quần</option>
-                        <option value="">Áo</option>
-                        <option value="">Giày</option>
-                        <option value="">Dụng cụ</option>
+                            <option value="">Bộ Lọc</option>
+                            <option value="">Quần</option>
+                            <option value="">Áo</option>
+                            <option value="">Giày</option>
+                            <option value="">Dụng cụ</option>
                         </select>
                     </div>
                     <div class="cartegory-right-top-item">
@@ -167,63 +251,61 @@
                             <option value="">Giá cao đến thấp</option>
                             <option value="">Giá thấp đến cao</option>
                         </select>
-                     </div>
-                     <div class="cartegory-right-content row">
+                    </div>
+                    <div class="cartegory-right-content row">
                         <div class="cartegory-right-content-item">
                             <a href="product.html">
-                                <img src="image/sp1.jpg" alt="">
+                                <img src="image/maintop/slide2.jpg" alt="">
                                 <h1> Áo Polo thun viền cổ MS 57E3355</h1>
                             </a>
                             <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp2.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Quần Jogger khaki phối túi MS 22E3458</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp3.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Áo thun in hình MS 57E3583</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp4.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Áo Polo thun MS 57E3491</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp5.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Áo Polo thun MS 57E3491</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp6.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Áo Polo thun MS 57E3491</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp7.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Áo Polo thun MS 57E3491</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="image/sp8.jpg" alt="">
+                            <img src="image/maintop/slide2.jpg" alt="">
                             <h1> Áo sơ mi thô phối túi MS 16E3460</h1>
-                                <p>1.743.000<sup>đ</sup></p>
+                            <p>1.743.000<sup>đ</sup></p>
                         </div>
                     </div>
-
-
-                   <div class="cartegory-right-bottom row">
+                    <!-- <div class="cartegory-right-bottom row">
                        <div class="cartegory-right-bottom-items">
                            <p>Hiện thị 2 <span>|</span> 4 sản phẩm</p>
                        </div>
                        <div class="cartegory-right-bottom-items">
                         <p><span>«</span>1 2 3 4 5<span>»</span>Trang cuối</p>
                         </div>
-                   </div> 
+                   </div>  -->
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -250,9 +332,10 @@
             </div>
         </div>
     </section>
-    <script src="js/slider.js"></script>
+    <script src="js/sliders.js"></script>
     <script src="js/product.js"></script>
     <script src="js/slidecart.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
-</html>                   
+</html>

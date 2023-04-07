@@ -1,228 +1,312 @@
-                       
- <!DOCTYPE html>
- <html lang="en">
- 
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-     <link rel="stylesheet" href="css/main.css">
-     <link rel="stylesheet" href="css/cart.css">
-     <link rel="stylesheet" href="css/cartegory.css">
-     <link rel="stylesheet" href="css/product.css">
-     <link rel="stylesheet" href="css/slider.css">
-     <link rel="stylesheet" href="css/payment.css">
-     <link rel="stylesheet" href="css/delivery.css">
-     <link rel="stylesheet" href="css/footer.css">
- 
-     <title>Thanh Toán</title>
- </head>
- 
- <body>
-     <secsion class="top">
-         <div class="container">
-             <div class="row">
-                 <div class="top-logo">
-                     </a><a href="index.html"><img src="image/logo/logo.png" alt="">
-                 </div>
-                 <div class="top-menu-items">
-                     <ul>
-                         <li>Nữ
-                             <ul class="top-menu-item">
-                                 <li>
-                                     <a href="cartegory.html">Áo thể thao nữ</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Quần thể thao nữ</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Giày thể thao nữ</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li>Nam
-                             <ul class="top-menu-item">
-                                 <li>
-                                     <a href="cartegory.html">Áo thể thao nam</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Quần thể thao nam</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Giày thể thao nam</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li>Top Bán chạy
-                             <ul class="top-menu-item">
-                                 <li>
-                                     <a href="cartegory.html">Áo</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Quần</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Giày</a>
-                                 </li>
-                             </ul>
-                         </li>
-                         <li>Thông tin
-                             <ul class="top-menu-item">
-                                 <li>
-                                     <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
-                                 </li>
-                                 <li>
-                                     <a href="cartegory.html">Mẫu giày nam nữ mới</a>
-                                 </li>
-                             </ul>
-                         </li>
-                     </ul>
-                 </div>
-                 <div class="top-menu-icons">
-                     <ul>
-                         <li>
-                             <input type="text" placeholder="tìm kiếm" value="" id="search-input">
-                             <i class="fas fa-search" id="search-load"></i>
-                             <script>
-                                 var searchIcon = document.getElementById("search-load");
-                                 var searchInput = document.getElementById("search-input");
-                                 searchIcon.onclick = function () {
-                                     var searchValue = searchInput.value;
-                                     window.location.href = "product.html";
-                                 }
-                             </script>
-                         </li>
-                         <li>
-                             <a href="login.html"><i class="fas fa-user"></i></a>
-                         </li>
-                         <li>
-                             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-                         </li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-         
-     </secsion>
- <!-- -------------------------Payment---------------- -->
-<section class="payment">
-    <div class="container">
-        <div class="payment-top-wrap">
-            <div class="payment-top">
-                <div class="payment-top-delivery payment-top-item">
-                   <i class="fas fa-shopping-cart"></i>
-                </div>
-                <div class="payment-top-adress payment-top-item">
-                   <i class="fas fa-map-marker-alt "></i>
-                </div>
-                <div class="payment-top-payment payment-top-item">
-                   <i class="fas fa-money-check-alt"></i>
-                </div>
-            </div>
-         </div>
-    </div>
-    <div class="container">
-        <div class="payment-content row">
-            <div class="payment-content-left">
-                <div class="payment-content-left-method-delivery">
-                    <p style="font-weight: bold;">Phương thức giao hàng</p>
-                    <div class="payment-content-left-method-delivery-item">
-                        <input checked type="radio">
-                        <label for="">Giao hàng chuyển phát nhanh</label>
-                    </div>
-                </div>
-                <div class="payment-content-left-method-payment">
-                    <p style="font-weight: bold;">Phương thức thanh toán</p>
-                    <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p>
-                    <div class="payment-content-left-method-payment-item">
-                        <input name="method-payment" type="radio">
-                        <label for="">Thanh toán bằng thẻ tín dụng(OnePay)</label>
-                    </div>
-                    <div class="payment-content-left-method-payment-item-img">
-                        <img src="image/bank/visa.png" alt="">
-                    </div>
-                    <div class="payment-content-left-method-payment-item">
-                        <input checked name="method-payment" type="radio">
-                        <label for=""> Thanh toán bằng thẻ ATM(OnePay)</label>
-                    </div>
-                    <div class="payment-content-left-method-payment-item-img">
-                        <img src="image/bank/vcb.png" alt="">
-                    </div>
-                    <div class="payment-content-left-method-payment-item">
-                        <input name="method-payment" type="radio">
-                        <label for="">  Thanh toán Momo</label>
-                    </div>
-                    <div class="payment-content-left-method-payment-item-img">
-                        <img src="image/bank/momo.png" alt="">
-                    </div>
-                    <div class="payment-content-left-method-payment-item">
-                        <input name="method-payment" type="radio">
-                        <label for="">  Thu tiền tận nơi</label>
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cartegory.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/delivery.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Thanh Toán</title>
+    <link rel="shortcut icon" href="image/logo/logo-tabbar.ico">
+</head>
+
+<body>
+    <secsion class="top">
+        <div class="container">
+            <div class="row">
+                <div class="top-logo">
+                    </a><a href="index.html"><img src="image/logo/logo.png" alt="">
+                </div>
+                <div class="top-menu-items">
+                    <ul>
+                        <li>Nữ
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Áo thể thao nữ</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Quần thể thao nữ</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Giày thể thao nữ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Nam
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Áo thể thao nam</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Quần thể thao nam</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Giày thể thao nam</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Quần Áo Bóng Đá
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu giày nam nữ mới</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Thông tin
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu giày nam nữ mới</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Trợ Giúp
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu giày nam nữ mới</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-menu-icons">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="tìm kiếm" value="" id="search-input">
+                            <i class="fas fa-search" id="search-load"></i>
+                            <script>
+                                var searchIcon = document.getElementById("search-load");
+                                var searchInput = document.getElementById("search-input");
+                                searchIcon.onclick = function () {
+                                    var searchValue = searchInput.value;
+                                    window.location.href = "product.html";
+                                }
+                            </script>
+                        </li>
+                        <li>
+                            <i class="fas fa-user pop-up"></i>
+                        </li>
+                        <li>
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="payment-content-right">
-                <div class="payment-content-right-button">
-                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
-                    <button><i class="fas fa-check"></i></button>
-                </div>
-                <div class="payment-content-right-button">
-                    <input type="text" placeholder="Mã cộng tác viên">
-                    <button><i class="fas fa-check"></i></button>
-                </div>
-                <div class="payment-content-right-mnv">
-                    <select name="" id="">
-                        <option value="">Chọn mã nhân viên thân thiết</option>
-                        <option value="">D345</option>
-                        <option value="">A345</option>
-                        <option value="">E365</option>
-                        <option value="">I345</option>
-                    </select>
+        </div>
+        <div class="login-container">
+            <div class="login-body">
+                <div class="wrapper">
+                    <span class="close"><i class="fas fa-times fa-lg" style="color: white;"></i></span>
+                    <div class="form-login login-box">
+                        <form action="#" class="">
+                            <h2><img src="image/logo/logo1.png" alt=""></h2>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="user" required class="">
+                                <label>Tên đăng nhập</label>
+                            </div>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="password" required class="">
+                                <label>Mật khẩu</label>
+                            </div>
+                            <div class="forgot-password">
+                                <label><input type="checkbox" class="">Ghi nhớ đăng nhập</label>
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
+                            <button type="submit" class="btn-login">Đăng nhập</button>
+                            <div class="register">
+                                <p>Chưa có tài khoản? <a href="#" class="register-link">Đăng ký</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-login register-box">
+                        <form action="#" class="">
+                            <h2><img src="image/logo/logo1.png" alt=""></h2>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="user" required class="">
+                                <label>Tên đăng nhập</label>
+                            </div>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="mail" required class="">
+                                <label>Email</label>
+                            </div>
+                            <div class="input-box">
+                                <i class="icon"></i>
+                                <input type="password" required class="">
+                                <label>Mật khẩu</label>
+                            </div>
+                            <div class="forgot-password">
+                                <label><input type="checkbox" class="">Tôi đồng ý với các điều khoản & điều kiện</label>
+                            </div>
+                            <button type="submit" class="btn-register">Đăng ký</button>
+                            <div class="register">
+                                <p>Đã có tài khoản? <a href="#" class="login-link">Đăng nhập</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="payment-content-right-payment">
-            <button>TIẾP TỤC THANH TOÁN</button>
+
+    </secsion>
+    <!-- -------------------------Payment---------------- -->
+    <section class="payment">
+        <div class="container">
+            <div class="payment-top-wrap">
+                <div class="payment-top">
+                    <div class="payment-top-delivery payment-top-item">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="payment-top-adress payment-top-item">
+                        <i class="fas fa-map-marker-alt "></i>
+                    </div>
+                    <div class="payment-top-payment payment-top-item">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
- 
- <!-- -------------------------Footer -->
- <section class="footer">
-    <div class="footer-container">
-        <div class="footer-items">
-            <li><a href=""><img src="image/bank/dathongbao.png" alt=""></a></li>
-            <li><a href="">Liên hệ</a></li>
-            <li><a href="">Tuyển dụng</a></li>
-            <li><a href="">Giới thiệu</a></li>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-youtube"></i></a></li>
+        <div class="container">
+            <div class="payment-content row">
+                <div class="payment-content-left">
+                    <div class="payment-content-left-method-delivery">
+                        <p style="font-weight: bold;">Phương thức giao hàng</p>
+                        <div class="payment-content-left-method-delivery-item">
+                            <input checked type="radio">
+                            <label for="">Giao hàng chuyển phát nhanh</label>
+                        </div>
+                    </div>
+                    <div class="payment-content-left-method-payment">
+                        <p style="font-weight: bold;">Phương thức thanh toán</p>
+                        <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu
+                            lại.</p>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for="">Thanh toán bằng thẻ tín dụng(OnePay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="image/bank/visa.png" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input checked name="method-payment" type="radio">
+                            <label for=""> Thanh toán bằng thẻ ATM(OnePay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="image/bank/vcb.png" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for=""> Thanh toán Momo</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="image/bank/momo.png" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for=""> Thu tiền tận nơi</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="payment-content-right">
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                        <button><i class="fas fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã cộng tác viên">
+                        <button><i class="fas fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-mnv">
+                        <select name="" id="">
+                            <option value="">Chọn mã nhân viên thân thiết</option>
+                            <option value="">D345</option>
+                            <option value="">A345</option>
+                            <option value="">E365</option>
+                            <option value="">I345</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-content-right-payment">
+                <button>TIẾP TỤC THANH TOÁN</button>
+            </div>
         </div>
-        <div class="footer-text">
-            Công ty trách nhiệm 3 thành viên: 012346789<br>
-            Địa chỉ đăng ký: Tp. Bảo Lộc, Lâm Đồng, Việt Nam - 1234569874 <br>
-            Đặt hàng online :1800-1880.
+    </section>
+
+    <!-- -------------------------Footer -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-items">
+                <li><a href=""><img src="image/bank/dathongbao.png" alt=""></a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-youtube"></i></a></li>
+            </div>
+            <div class="footer-text">
+                Công ty trách nhiệm 3 thành viên: 012346789<br>
+                Địa chỉ đăng ký: Tp. Bảo Lộc, Lâm Đồng, Việt Nam - 1234569874 <br>
+                Đặt hàng online :1800-1880.
+            </div>
+            <div class="footer-bottom">
+                ©HKD Sports All rights reserved
+            </div>
         </div>
-        <div class="footer-bottom">
-            ©HKD Sports All rights reserved
-        </div>
-    </div>
-</section>
-<script src="js/slider.js"></script>
-<script src="js/product.js"></script>
-<script src="js/slidecart.js"></script>
+    </section>
+    <script src="js/sliders.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/slidecart.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
-                      

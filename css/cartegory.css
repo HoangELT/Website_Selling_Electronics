@@ -65,7 +65,7 @@
  .cartegory-right-content-item p {
      font-size: 12px;
  }
- .cartegory-right-bottom {
+ /* .cartegory-right-bottom {
      justify-content: space-between;
      margin: 30px 0 20px;
      width: 100%;
@@ -73,7 +73,7 @@
  .cartegory-right-bottom p {
      font-family: var(--main-text-font);
      font-size: 11px;
- }
+ } */
  .cartegory-left ul li {
      padding: 12px 0;
  }
