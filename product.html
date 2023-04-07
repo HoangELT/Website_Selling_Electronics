@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Website - Trang sản phẩm</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cartegory.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/delivery.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/slider.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/slidecart.js"></script>
+
+    <title>Sản Phẩm</title>
 </head>
+
 <body>
     <secsion class="top">
         <div class="container">
             <div class="row">
                 <div class="top-logo">
-                    <a href="index.html"><img src="image/logo.png" alt=""></a>
+                    </a><a href="index.html"><img src="image/logo/logo.png" alt="">
                 </div>
                 <div class="top-menu-items">
                     <ul>
                         <li>Nữ
                             <ul class="top-menu-item">
                                 <li>
-                                    <a href="">Hàng nữ mới về</a>
+                                    <a href="cartegory.html">Áo thể thao nữ</a>
                                 </li>
                                 <li>
-                                    <a href="">Hướng dương đón nắng</a>
+                                    <a href="cartegory.html">Quần thể thao nữ</a>
                                 </li>
                                 <li>
-                                    <a href="">Áo nữ</a>
-                                </li>
-                                <li>
-                                    <a href="">Váy nữ</a>
+                                    <a href="cartegory.html">Giày thể thao nữ</a>
                                 </li>
                             </ul>
                         </li>
                         <li>Nam
                             <ul class="top-menu-item">
                                 <li>
-                                    <a href="">Hàng Nam mới về</a>
+                                    <a href="cartegory.html">Áo thể thao nam</a>
                                 </li>
                                 <li>
-                                    <a href="">Áo nam</a>
+                                    <a href="cartegory.html">Quần thể thao nam</a>
                                 </li>
                                 <li>
-                                    <a href="">Váy nam</a>
-                                </li>
-                                <li>
-                                    <a href="">Quần nam</a>
+                                    <a href="cartegory.html">Giày thể thao nam</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>Trẻ em</li>
-                        <li>Flast sale</li>
-                        <li>Hot items</li>
-                        <li>Bộ sưu tập</li>
-                        <li>Tin tức</li>
-                        <li>Thông tin</li>
+                        <li>Top Bán chạy
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Áo</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Quần</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Giày</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Thông tin
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu áo thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nữ mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu quần thể thao nam mới</a>
+                                </li>
+                                <li>
+                                    <a href="cartegory.html">Mẫu giày nam nữ mới</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="top-menu-icons">
                     <ul>
                         <li>
-                            <input type="text" placeholder="tìm kiếm">
-                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="tìm kiếm" value="" id="search-input">
+                            <i class="fas fa-search" id="search-load"></i>
+                            <script>
+                                var searchIcon = document.getElementById("search-load");
+                                var searchInput = document.getElementById("search-input");
+                                searchIcon.onclick = function () {
+                                    var searchValue = searchInput.value;
+                                    window.location.href = "product.html";
+                                }
+                            </script>
                         </li>
                         <li>
-                            <i class="fas fa-user-secret"></i>
+                            <a href="login.html"><i class="fas fa-user"></i></a>
                         </li>
                         <li>
-                            <i class="fas fa-shopping-cart"></i>
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -78,17 +121,17 @@
     <section class="product">
         <div class="container">
             <div class="product-top row">
-                <p>Trang chủ</p> <span>⟶	</span> <p>Nam</p> <span>⟶</span> <p>Hàng nam mới về</p><span>⟶</span> <p>Áo Polo thun viền cổ MS 57E3355</p>
+                <p>Trang chủ</p> <span>⟶	</span> <p>Nam</p> <span>⟶</span> <p>Quần</p><span>⟶</span> <p>Áo Polo thun viền cổ</p>
             </div>
             <div class="product-content row">
                 <div class="product-content-left row">
                     <div class="product-content-left-big-img">
-                        <img src="image/sp1.1.jpg" alt="">
+                        <img src="image1/sp1.1.jpg" alt="">
                     </div>
                     <div class="product-content-left-small-img">
-                        <img src="image/sp1.1.jpg" alt="">
-                        <img src="image/sp1.2.jpg" alt="">
-                        <img src="image/sp1.3.jpg" alt="">
+                        <img src="image1/sp1.1.jpg" alt="">
+                        <img src="image1/sp1.2.jpg" alt="">
+                        <img src="image1/sp1.3.jpg" alt="">
                     </div>
                 </div>
                 <div class="product-content-right">
@@ -136,7 +179,7 @@
                         </div>
                     </div>
                     <div class="product-content-right-product-QR">
-                        <img src="image/qrcode2.png" alt="">
+                        <img src="image/bank/qrcode2.png" alt="">
                     </div>
                     <div class="product-content-right-bottom">
                         <div class="product-content-right-bottom-top">
@@ -202,17 +245,17 @@
         </div>
         <div class=" row product-content">
             <div class="product-related-item">
-                <img src="image/prl1.jpg" alt="">
+                <img src="image1/prl1.jpg" alt="">
                 <h1>Áo Polo thun viền cổ MS 57E3355</h1>
                 <p> 1.743.000<sup>đ</sup></p>
             </div>
             <div class="product-related-item">
-                <img src="image/prl2.jpg" alt="">
+                <img src="image1/prl2.jpg" alt="">
                 <h1>Áo Polo thun viền cổ MS 57E3355</h1>
                 <p> 1.743.000<sup>đ</sup></p>
             </div>
             <div class="product-related-item">
-                <img src="image/prl3.jpg" alt="">
+                <img src="image1/prl3.jpg" alt="">
                 <h1>Áo Polo thun viền cổ MS 57E3355</h1>
                 <p> 1.743.000<sup>đ</sup></p>
             </div>
@@ -222,37 +265,24 @@
     <!-- -------------------------Footer -->
     <section class="footer">
         <div class="footer-container">
-            <p>Tải ứng dụng IVY moda</p>
-            <div class="app-google">
-                <a href=""><img src="image/appstore.jpg" alt=""></a>
-                <a href=""> <img src="image/googleplay.jpg" alt=""></a>
-            </div>
-            <p>Nhận bản tin IVY moda</p>
-            <div class="input-email">
-                <input type="text" placeholder="Nhập email của bạn">
-                <i class="fas fa-arrow-left"></i>
-            </div>
             <div class="footer-items">
-                <li><a href=""><img src="image/dathongbao.png" alt=""></a></li>
+                <li><a href=""><img src="image/bank/dathongbao.png" alt=""></a></li>
                 <li><a href="">Liên hệ</a></li>
                 <li><a href="">Tuyển dụng</a></li>
                 <li><a href="">Giới thiệu</a></li>
                 <li><a href=""><i class="fab fa-facebook-f"></i></a><a href=""><i class="fab fa-youtube"></i></a></li>
             </div>
             <div class="footer-text">
-                Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
-Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam - 0243 205 2222 <br>
-Đặt hàng online : 0246 662 3434 .
+                Công ty trách nhiệm 3 thành viên: 012346789<br>
+                Địa chỉ đăng ký: Tp. Bảo Lộc, Lâm Đồng, Việt Nam - 1234569874 <br>
+                Đặt hàng online :1800-1880.
             </div>
             <div class="footer-bottom">
-                ©Ivymoda All rights reserved
+                ©HKD Sports All rights reserved
             </div>
         </div>
     </section>
 
-
-<script src="script.js"></script>
-
-
 </body>
-</html>                      
+
+</html>                     
