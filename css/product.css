@@ -261,11 +261,6 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.product-related-item {
-  
-}
-
 .product-related-item:hover {
     transform: translateY(-10px);
 }
