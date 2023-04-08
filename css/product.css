@@ -100,7 +100,7 @@
     margin: 20px 0 12px;
     transition: all 0.3s ease;
 }
-.product-content-right-product-button .btn-product-add,
+.product-content-right-product-button .btn-product-add:hover,
 .product-content-right-product-button .btn-product:hover {
     opacity: 0.8;
 }
@@ -227,7 +227,6 @@
     font-size: 14px;
     font-weight: bold;
     color: gold;
-
 }
 
 .product-related-item {
