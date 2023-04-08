@@ -2,6 +2,10 @@
      padding-bottom: 20px;
      overflow: hidden;
      width: 100%;
+     /* margin-top: 10%; */
+ }
+ .sliders .dot-container{
+    margin-top: 10%;
  }
  .aspect-ratio-169 {
      display: block;

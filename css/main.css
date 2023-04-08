@@ -22,6 +22,9 @@
      max-width: 1200px;
      margin: auto;
  }
+ .main-product{
+    margin-top: 10%;
+ }
  .row{
      display: flex;
      flex-wrap: wrap;
