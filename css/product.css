@@ -1,5 +1,6 @@
 .product {
-    padding: 200px 0;
+    padding: 10px 0;
+    padding-top: 200px;
 }
 
 .product-top {
@@ -204,7 +205,7 @@
 }
 
 .product-content-right-bottom-content-baoquan {
-    display: none;
+    display: wrap;
 }
 
 .activeB {
@@ -259,11 +260,11 @@
 }
 
 /*----------------------body-product-top--------------------------*/
-/* .product-related {
+.product-related {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-} */
+}
 .product-related-item:hover {
     transform: translateY(-10px);
 }
