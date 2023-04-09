@@ -2,10 +2,9 @@
      padding-bottom: 20px;
      overflow: hidden;
      width: 100%;
-     /* margin-top: 10%; */
  }
  .sliders .dot-container{
-    margin-top: 10%;
+    margin-top: 50px;
  }
  .aspect-ratio-169 {
      display: block;
@@ -24,16 +23,15 @@
      /* margin-top: 86px; */
  }
  .dot-container {
-     /* position: absolute; */
      width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: 6px;
+     margin-top: 3px;
  }
  .dot {
-     width: 13px;
-     height: 13px;
+     width: 15px;
+     height: 15px;
      background-color: #cccccc;
      border-radius: 50%;
      margin-right: 12px;

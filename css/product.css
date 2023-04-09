@@ -216,6 +216,9 @@
     margin-bottom: 50px;
     border: 2px #cccccc solid;
     background-color: snow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product-related-title {
@@ -224,7 +227,7 @@
 
 .product-related-title p {
     font-family: var(--main-text-font);
-    font-size: 14px;
+    font-size: 25px;
     font-weight: bold;
     color: gold;
 }
@@ -246,21 +249,21 @@
 
 .product-related-item h1 {
     font-family: var(--main-text-font);
-    font-size: 11px;
+    font-size: 15px;
     color: #333333;
     margin-top: 6px;
 }
 
 .product-related-item p {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /*----------------------body-product-top--------------------------*/
-.product-related {
+/* .product-related {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 .product-related-item:hover {
     transform: translateY(-10px);
 }
