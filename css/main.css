@@ -30,7 +30,7 @@
      flex-wrap: wrap;
  }
  .top {
-     /* padding: 12px 0; */
+     padding: 12px 0;
      align-items: center;
      display: block;
      position: fixed;
@@ -38,7 +38,7 @@
      z-index: 999;
      background-color: rgba(255, 255, 255, 0.3);
      transition: all 0.3s ease;
-    font-size: 20px;
+     font-size: 20px;
  }
  .top.active {
      background-color: rgba(255, 255, 255, 1);
@@ -95,7 +95,7 @@
      display: none;
      opacity: 0;
      transition: all 0.5s ease;
-     background-color: #ffff;
+     background-color: #ffffff;
      height: auto!important;
      padding: 6px;
      border: 1px solid #dddddd;
