@@ -30,7 +30,7 @@
      flex-wrap: wrap;
  }
  .top {
-     /* padding: 12px 0; */
+     padding: 12px 0;
      align-items: center;
      display: block;
      position: fixed;
