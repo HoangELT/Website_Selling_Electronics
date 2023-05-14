@@ -66,7 +66,7 @@ include ("../admin/includes/header.php");
                         <i class="material-icons opacity-10">weekend</i>
                     </div>
                     <div class="text-end pt-1">
-                        <p class="text-sm mb-0 text-capitalize">Sales</p>
+                        <p class="text-sm mb-0 text-capitalize">Doanh thu</p>
                         <h4 class="mb-0">$<?= totalPriceGet() ?></h4>
                     </div>
                     </div>

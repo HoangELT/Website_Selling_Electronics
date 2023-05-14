@@ -18,17 +18,17 @@ include ("../admin/includes/header.php");
                             ?>
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4>Edit Product
-                                        <a  href="products.php" class="btn btn-primary float-end "></i>Back</a>
+                                        <h4>Chỉnh sửa sản phẩm
+                                        <a  href="products.php" class="btn btn-primary float-end "></i>Trở về</a>
                                         </h4>
                                     </div>
                                     <div class="card-body">
                                         <form action="code.php" method="POST" enctype="multipart/form-data"><!-- Uploads image -->
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                <label class="mb-0"><b>Select Category</b></label>
+                                                <label class="mb-0"><b>Chọn danh mục sản phẩm</b></label>
                                                 <select name="category_id" class="form-select mb-2">
-                                                    <option selected>Select Category</option>
+                                                    <option selected>Chọn danh mục sản phẩm</option>
                                                     <?php 
                                                         $categories= getAll("categories");
                                                         if(mysqli_num_rows($categories)>0)
@@ -41,7 +41,7 @@ include ("../admin/includes/header.php");
                                                             }
                                                         }else
                                                         {
-                                                            echo "No Category available";
+                                                            echo "Danh mục sản phẩm không hợp lệ";
                                                         }
                                                         
                                                     ?>                                  
@@ -50,57 +50,57 @@ include ("../admin/includes/header.php");
                                                 <div class="col-md-6">
                                                 <input type="hidden" name="product_id" value="<?= $data['id']; ?>">
                                                 <br>
-                                                    <label class="mb-0"><b>Name</b></label>
-                                                    <input type="text" id="full-name" required name="name" value="<?= $data['name']; ?>" placeholder="Enter Product Name" class="form-control mb-2 "> 
+                                                    <label class="mb-0"><b>Tên sản phẩm</b></label>
+                                                    <input type="text" id="full-name" required name="name" value="<?= $data['name']; ?>" placeholder="Hãy nhập tên sản phẩm" class="form-control mb-2 "> 
                                                 </div>                               
                                                 <div class="col-md-6">
                                                 <br>
-                                                    <label class="mb-0"><b>Slug</b></label>
-                                                    <input type="text" id="slug-name"required name="slug" value="<?= $data['slug']; ?>" placeholder="Enter slug" class="form-control mb-2">
+                                                    <label class="mb-0"><b>Tên mô tả sản phẩm</b></label>
+                                                    <input type="text" id="slug-name"required name="slug" value="<?= $data['slug']; ?>" placeholder="Hãy nhập tên mô tả sản phẩm" class="form-control mb-2">
                                                 </div>
                                                 <div class="col-md-12">
                                                 <br>
-                                                    <label class="mb-0"><b>Small Description</b></label>
-                                                    <textarea type="text" required name="small_description" placeholder="Enter Small Description" class="form-control mb-2"><?= $data['small_description']; ?></textarea>
+                                                    <label class="mb-0"><b>Mô tả sản phẩm</b></label>
+                                                    <textarea type="text" required name="small_description" placeholder="Hãy mô tả sản phẩm" class="form-control mb-2"><?= $data['small_description']; ?></textarea>
                                                 </div>                               
                                                 <div class="col-md-12">
                                                 <br>
-                                                    <label class="mb-0"><b>Description</b></label>
-                                                    <textarea type="text" required name="description"  placeholder="Enter Description" class="form-control mb-2"><?= $data['description']; ?></textarea>
+                                                    <label class="mb-0"><b>Mô tả chi tiết sản phẩm</b></label>
+                                                    <textarea type="text" required name="description"  placeholder="Hãy mô tả sản phẩm chi tiết" class="form-control mb-2"><?= $data['description']; ?></textarea>
                                                 </div>
                                                 <div class="col-md-6">
                                                 <br>
-                                                    <label class="mb-0"><b>Original Price</b></label>
-                                                    <input type="text" required name="original_price" value="<?= $data['original_price']; ?>" placeholder="Enter Original Price" class="form-control mb-2"> 
+                                                    <label class="mb-0"><b>Giá gốc</b></label>
+                                                    <input type="text" required name="original_price" value="<?= $data['original_price']; ?>" placeholder="Hãy nhập giá gốc" class="form-control mb-2"> 
                                                 </div>                               
                                                 <div class="col-md-6">
                                                 <br>
-                                                    <label class="mb-0"><b>Selling Price</b></label>
-                                                    <input type="text" required name="selling_price" value="<?= $data['selling_price']; ?>"  placeholder="Enter Selling Price" class="form-control mb-2">
+                                                    <label class="mb-0"><b>Giá bán</b></label>
+                                                    <input type="text" required name="selling_price" value="<?= $data['selling_price']; ?>"  placeholder="Hãy nhập giá bán" class="form-control mb-2">
                                                 </div>                              
                                                 <div class="col-md-12">
                                                 <br>
-                                                    <label class="mb-0"><b>Image</b></label>
+                                                    <label class="mb-0"><b>Ảnh</b></label>
                                                     <input type="file" name="image" class="form-control mb-2">
-                                                    <label for="">Current Image</label>
+                                                    <label for="">Ảnh hiện tại</label>
                                                     <input type="hidden" name="old_image" value="<?=$data['image']?>">
-                                                    <img src="../images/<?= $data['image']?>" height="50px" width="50px" alt="Prodcut Image">
+                                                    <img src="../images/<?= $data['image']?>" height="50px" width="50px" alt="Ảnh sản phẩm">
                                                 </div>
                                                 <div class="col-md-6">
                                                 <br>
-                                                    <label class="mb-0"><b>Quality</b></label>
-                                                    <input type="number" required name="qty" value="<?= $data['qty']; ?>" placeholder="Enter Quality" class="form-control mb-2"> 
+                                                    <label class="mb-0"><b>Số lượng</b></label>
+                                                    <input type="number" required name="qty" value="<?= $data['qty']; ?>" placeholder="Hãy nhập số lượng sản phẩm" class="form-control mb-2"> 
                                                 </div> 
                                                 <div class="col-md-6">
                                                 <br>
                                                 <br>
                                                 <br>
-                                                    <label class="mb-0"><b>Status</b></label>
+                                                    <label class="mb-0"><b>Trạng thái</b></label>
                                                     <input type="checkbox" name="status" <?= $data['status'] == '0'?'':'checked' ?>>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <br>
-                                                    <button type="submit" class="btn btn-primary" name="update_product_btn">Update</button>
+                                                    <button type="submit" class="btn btn-primary" name="update_product_btn">Cập nhật</button>
                                                 </div>
                                             </div>
                                         </form>

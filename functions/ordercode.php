@@ -66,7 +66,7 @@ if (isset($_POST['order'])){
                 WHERE `order_detail`.`status` = 1 AND `order_detail`.`user_id` = '$user_id'";    
     $check_products = mysqli_query($conn, $query);
 
-    // Kiểm tra số lượng trong kho và số luongj đặt của từng sản phẩm
+    // Kiểm tra số lượng trong kho và số lượng đặt của từng sản phẩm
     foreach ($check_products as $product){
         if ($product['quantity'] > $product['qty']){
             $_SESSION['message'] = "Số lượng sản phẩm: " . $product['name'] . " không đủ trong kho. Chỉ còn " . $product['qty'] . " Sản phẩm";

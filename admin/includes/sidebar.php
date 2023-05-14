@@ -42,7 +42,7 @@ $page= substr($_SERVER['SCRIPT_NAME'], strripos($_SERVER['SCRIPT_NAME'],"/")+1);
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
-            <span class="nav-link-text ms-1">Tất cả danh mục</span>
+            <span class="nav-link-text ms-1">Tất cả danh mục sản phẩm</span>
           </a>
         </li>
         <li class="nav-item">
@@ -50,7 +50,7 @@ $page= substr($_SERVER['SCRIPT_NAME'], strripos($_SERVER['SCRIPT_NAME'],"/")+1);
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
-            <span class="nav-link-text ms-1">Thêm loại sản phẩm</span>
+            <span class="nav-link-text ms-1">Thêm danh mục sản phẩm</span>
           </a>
         </li>
         <li class="nav-item">

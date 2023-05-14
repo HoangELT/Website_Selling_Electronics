@@ -20,7 +20,7 @@ include("./includes/header.php");
                                     </div>
                                     <div class="mb-3">
                                         <b><label for="exampleInputPassword1" class="form-label">Mật khẩu</label></b>
-                                        <input type="password" name="password" class="form-control"  placeholder="Nhập mật khẩu">
+                                        <input type="password" name="password" class="form-control"  placeholder="Nhập lại mật khẩu">
                                     </div>              
                                     <button type="submit" name="login_btn" class="btn btn-primary">Đăng nhập</button>
                             </form>

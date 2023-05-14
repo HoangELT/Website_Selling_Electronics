@@ -76,7 +76,6 @@ $page = $page - 1;
                     </form>
                     
                     <ul class="user-menu">
-                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
                             <?php
                             if(isset($_SESSION['auth']))
                             {                                   

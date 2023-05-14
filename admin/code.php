@@ -84,7 +84,6 @@ else if(isset($_POST['delete_category_btn']))
     
     $delete_query= "DELETE FROM categories WHERE id='$category_id'";
     $delete_query_run=mysqli_query($conn,$delete_query);
-    
     if($delete_query_run)
     {
         if(file_exists("../images/".$image))
@@ -95,7 +94,6 @@ else if(isset($_POST['delete_category_btn']))
     }else
     {
         redirect("caterory.php","Đã xảy ra lỗi");
-
     }
 }
 else if(isset($_POST['add_product_btn']))

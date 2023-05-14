@@ -8,40 +8,40 @@ include ("../admin/includes/header.php");
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Add blog</h4>
+                        <h4>Thêm tin tức</h4>
                     </div>
                     <div class="card-body">
                         <form action="code.php" method="POST" enctype="multipart/form-data"><!-- Uploads image -->
 
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label for=""><b>Title</b></label>
-                                    <input type="text" id="full-name" required name="title" placeholder="Enter Blog Name" class="form-control"> 
+                                    <label for=""><b>Tiêu đề</b></label>
+                                    <input type="text" id="full-name" required name="title" placeholder="Hãy nhập tên tin tức" class="form-control"> 
                                 </div>                               
                                 <div class="col-md-12">
                                 <br>
-                                    <label for=""><b>Slug</b></label>
-                                    <input type="text" id="slug-name" required name="slug" placeholder="Enter slug" class="form-control">
+                                    <label for=""><b>Tên mô tả tin tức</b></label>
+                                    <input type="text" id="slug-name" required name="slug" placeholder="Hãy nhập tên mô tả tin tức" class="form-control">
                                 </div>                                                        
                                 <div class="col-md-12">
                                 <br>
-                                    <label for=""><b>Image description</b></label>
+                                    <label for=""><b>Ảnh mô tả</b></label>
                                     <input type="file" required name="image" class="form-control">
                                 </div>
                                 <div class="col-md-12">
                                 <br>
-                                    <label class="mb-0"><b>Small Content</b></label>
-                                    <textarea type="text" style="height: 150px" required="" name="small_content" placeholder="Enter Small Content" class="form-control mb-2"></textarea>
+                                    <label class="mb-0"><b>Nội dung</b></label>
+                                    <textarea type="text" style="height: 150px" required="" name="small_content" placeholder="Hãy nhập nội dung" class="form-control mb-2"></textarea>
                                 </div>
                                 <div class="col-md-12">
                                 <br>
-                                    <label for=""><b>Content</b></label>
+                                    <label for=""><b>Nội dung chi tiết</b></label>
                                     <textarea name="content" id="myTextarea" style="height: 500px"></textarea>
                                 </div>
                                 <input type="hidden" name="add_blog_btn" value="true">
                                 <div class="col-md-12">
                                     <br>
-                                    <button type="submit" class="btn btn-primary">Create blog</button>
+                                    <button type="submit" class="btn btn-primary">Tạo tin tức</button>
                                 </div>
                             </div>
                         </form>

@@ -21,11 +21,11 @@ $users = getAllUsers();
                             <table class="table align-items-center mb-0">
                                 <thead>
                                     <tr>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">Name</th>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10 ps-2">Phone</th>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10 ps-2">Address</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">Total order</th>
-                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">Day come</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">Tên khách hàng</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10 ps-2">Số điện thoại</th>
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-10 ps-2">Địa chỉ</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">Tổng đơn hàng</th>
+                                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-10">Ngày tạo</th>
                                     </tr>
                                 </thead>
                                 <tbody>
