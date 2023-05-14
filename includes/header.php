@@ -160,8 +160,7 @@ $page = $page - 1;
                             </div>
                         </li>
                         <!-- end mega menu -->
-                        <li><a href="./blog.php">blog</a></li>
-                        <li><a href="#">Liên lạc</a></li>
+                        <li><a href="./blog.php">Tin tức</a></li>
                     </ul>
                 </div>
             </div>

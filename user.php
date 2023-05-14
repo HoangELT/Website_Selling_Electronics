@@ -14,7 +14,7 @@ include("./includes/header.php");
             ?>
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
                     <strong>Hey!</strong><?= $_SESSION['message']; ?>.
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Thoát"></button>
                 </div>
             <?php
                 unset($_SESSION['message']);
@@ -24,7 +24,7 @@ include("./includes/header.php");
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-            <h1 >Profile</h1>
+            <h1 >Chi tiết tài khoản</h1>
             </div>
             <?php 
                 if(isset($_GET['id']))
@@ -37,30 +37,30 @@ include("./includes/header.php");
                         ?>
                             <div class="col-md-8">
                                 <form action="./functions/authcode.php" method="POST">
-                                        <label class="mb-0" for=""><b>Name</b></label>
+                                        <label class="mb-0" for=""><b>Họ và Tên</b></label>
                                         <input class="form-control" type="text" name="name" value="<?= $data['name']?>" ><br>
                                         <label class="mb-0" for=""><b>Email</b></label>
                                         <input class="form-control" type="text" name="email" value="<?= $data['email']?>" ><br>
-                                        <label class="mb-0" for=""><b>Phone Number</b></label>
+                                        <label class="mb-0" for=""><b>Số điện thoại</b></label>
                                         <input class="form-control" type="text" name="phone" value="<?= $data['phone']?>"><br>
-                                        <label class="mb-0" for=""><b>Address</b></label>
+                                        <label class="mb-0" for=""><b>Địa chỉ</b></label>
                                         <input class="form-control" type="text" name="address" value="<?= $data['address']?>" ><br>
-                                        <label class="mb-0" for=""><b>Password</b></label>
+                                        <label class="mb-0" for=""><b>Mật khẩu</b></label>
                                         <input class="form-control" type="password" name="password" value="<?= $data['password']?>" ><br>
-                                        <label class="mb-0" for=""><b>Confirm Password</b></label>
+                                        <label class="mb-0" for=""><b>Xác nhận mật khẩu</b></label>
                                         <input class="form-control" type="password" name="cpassword" value="<?= $data['password']?>" ><br> 
                                         <input type="hidden" name="id" value="<?= $row['id']; ?>">   
-                                        <button type="submit" name="update_user_btn" class="btn btn-primary" >Save</button>
+                                        <button type="submit" name="update_user_btn" class="btn btn-primary" >Lưu</button>
                                 </form>           
                         <?php
                     }else
                     {
-                        echo "User Not found for given id";
+                        echo "Không tìm thấy tài khoản";
                     }
                 }
                 else
                 {
-                    echo "ID missing from url";
+                    echo "ID không có trong url";
                 }
             ?>         
         </div>           
