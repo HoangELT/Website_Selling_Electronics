@@ -48,7 +48,7 @@ if (!isset($_SESSION['auth_user']['id'])){
                     if (mysqli_num_rows($products) == 0){
                 ?>
                     <p style="font-size: 20px; text-align: center;">
-                      Giỏ hàng cua bản trống. mua ngay <a style="color: blue; text-decoration: underline" href="./products.php">Tại đây</a>  
+                      Giỏ hàng của bạn đang trống. Mua ngay tại đây <a style="color: blue; text-decoration: underline" href="./products.php">Tại đây</a>  
                     </p>
                 <?php } else { ?>
                     <table width="100%" border="1" cellspacing="0">

@@ -24,7 +24,7 @@ document.querySelector('.slider').addEventListener('mouseover', () => slide_play
 // enable slide when mouse leave out slider
 document.querySelector('.slider').addEventListener('mouseleave', () => slide_play = true)
 
-// slider controll
+// slider control
 
 document.querySelector('.slide-next').addEventListener('click', () => {
     nextSlide()

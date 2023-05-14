@@ -47,7 +47,7 @@ if (!isset($_SESSION['auth_user']['id'])){
                     if (mysqli_num_rows($products) == 0){
                 ?>
                     <p style="font-size: 20px; text-align: center;">
-                      Giỏ hàng cua bản trống. mua ngay <a style="color: blue; text-decoration: underline" href="./products.php">Tại đây</a>  
+                      Giỏ hàng của bạn đang trống. Mua ngay <a style="color: blue; text-decoration: underline" href="./products.php">Tại đây</a>  
                     </p>
                 <?php } else { ?>
                     <table width="100%" border="1" cellspacing="0">
@@ -105,7 +105,7 @@ if (!isset($_SESSION['auth_user']['id'])){
                     </form>
                 <?php } ?>
                 <a href="./cart-status.php">
-                    <h4>Xem giỏ hàng đã mua</h4>
+                    <h4>Xem đơn hàng đã đặt</h4>
                 </a>
                 <br>
                 <br>
