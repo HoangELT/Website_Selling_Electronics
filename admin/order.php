@@ -61,7 +61,7 @@ $orders = getAllOrder($type);
                                             <p class="text-xs font-weight-bold mb-0">
                                                 <a href="./order-detail.php?id_order=<?= $order['id'] ?>">Xem ngay</a>
                                             </p>
-                                            <p class="text-xs text-secondary mb-0">Quantity: <?= $order['quantity'] ?></p>
+                                            <p class="text-xs text-secondary mb-0">Số lượng: <?= $order['quantity'] ?></p>
                                         </td>
                                         <td>
                                             <p class="text-xs font-weight-bold mb-0"><?= $order['address'] ?></p>

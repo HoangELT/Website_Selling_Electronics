@@ -111,17 +111,19 @@ $blogs                  =   getBlogs($page, $search);
                                 <a href="./product-detail.php?slug=<?= $product['slug'] ?>">
                                     <button class="btn-flat btn-hover btn-shop-now">Mua ngay</button>
                                 </a>
+ 	              <a href="./product-detail.php?slug=<?= $product['slug'] ?>">
                                 <button class="btn-flat btn-hover btn-cart-add">
                                     <i class='bx bxs-cart-add'></i>
                                 </button>
+	              </a>
                                 
                             </div>
                             <div class="product-card-name">
                                 <?= $product['name'] ?>
                             </div>
                             <div class="product-card-price">
-                                <span><del>$<?= $product['original_price'] ?></del></span>
-                                <span class="curr-price">$<?= $product['selling_price'] ?></span>
+                                <span><del><?= $product['original_price'] ?> VNĐ</del></span>
+                                <span class="curr-price"><?= $product['selling_price'] ?> VNĐ</span>
                             </div>
                         </div>
                     </div>  
@@ -188,19 +190,18 @@ $blogs                  =   getBlogs($page, $search);
                                 <a href="./product-detail.php?slug=<?= $product['slug'] ?>">
                                     <button class="btn-flat btn-hover btn-shop-now">Mua ngay</button>
                                 </a>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-cart-add'></i>
-                                </button>
-                                <button class="btn-flat btn-hover btn-cart-add">
-                                    <i class='bx bxs-heart'></i>
-                                </button>
+	              <a href="./product-detail.php?slug=<?= $product['slug'] ?>">
+                                     <button class="btn-flat btn-hover btn-cart-add">
+                                            <i class='bx bxs-cart-add'></i>
+                                     </button>
+	              </a>
                             </div>
                             <div class="product-card-name">
                                 <?= $product['name']?>
                             </div>
                             <div class="product-card-price">
-                                <span><del>$<?= $product['original_price']?></del></span>
-                                <span class="curr-price">$<?= $product['selling_price']?></span>
+                                <span><del><?= $product['original_price']?> VNĐ</del></span>
+                                <span class="curr-price"><?= $product['selling_price']?> VNĐ</span>
                             </div>
                         </div>
                     </div>

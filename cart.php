@@ -74,15 +74,13 @@ if (!isset($_SESSION['auth_user']['id'])){
                                     <input type="number" name="quantity" value="<?= $product['quantity']?>" class="input-number">
                                 </td>
                                 <td>
-                                    $
                                     <span>
-                                        <?= $product['selling_price']?>
+                                        <?= $product['selling_price']?> VNĐ
                                     </span>
                                 </td>
                                 <td>
-                                    $
                                     <span class="total-price">
-                                        <?= $product['selling_price'] * $product['quantity'] ?>
+                                        <?= $product['selling_price'] * $product['quantity'] ?> VNĐ
                                     </span>
                                 </td>
                                 <td>
@@ -100,7 +98,7 @@ if (!isset($_SESSION['auth_user']['id'])){
                     </table>
                     <form action="./functions/ordercode.php" method="post">
                         <input type="hidden" name="buy_product" value="true">
-                        <p style="display: block;">Tổng tiền: $<?=$total_price?></p>
+                        <p style="display: block;">Tổng tiền: <?=$total_price?> VNĐ</p>
                         <button class="btn-buy" style="float: right;">Đặt hàng</button>
                     </form>
                 <?php } ?>

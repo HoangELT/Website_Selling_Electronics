@@ -71,15 +71,13 @@ if (!isset($_SESSION['auth_user']['id'])){
                                 <?= $product['quantity']?>
                             </td>
                             <td>
-                                $
                                 <span>
-                                    <?= $product['selling_price']?>
+                                    <?= $product['selling_price']?> VNĐ
                                 </span>
                             </td>
                             <td>
-                                $
                                 <span class="total-price">
-                                    <?= $product['selling_price'] * $product['quantity'] ?>
+                                    <?= $product['selling_price'] * $product['quantity'] ?> VNĐ
                                 </span>
                             </td>
                             <td>
