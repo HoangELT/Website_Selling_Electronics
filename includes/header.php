@@ -67,7 +67,7 @@ $page = $page - 1;
                         <form class="search" method="get" action="./products.php">
                     <?php } else { ?>
                         <form class="search" method="get" action="./blog.php">
-                    <?php } ?>
+                    <?php }?>
                         <input name="search" type="text" value="<?= $search ?>" placeholder="Tìm kiếm">
                         <button type="submit" style="display:inline; border:none" >
                             <i class='bx bx-search-alt'></i>
