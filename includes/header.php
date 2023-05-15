@@ -30,6 +30,7 @@ $page = $page - 1;
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="shortcut icon" type="image/icon" href="logo/favicon.ico"/>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     
      <!-- mobile menu -->
