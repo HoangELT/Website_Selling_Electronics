@@ -25,6 +25,10 @@ include("./includes/header.php");
                             <b><label for="exampleInputEmail1" class="form-label">SĐT</label></b>
                             <input type="number" required name="phone" class="form-control"  placeholder="Nhập số điện thoại của bạn">
                         </div>
+	       <div class="mb-3">
+                            <b><label for="exampleInputAddress1" class="form-label">Địa chỉ</label></b>
+                            <input type="text" required name="address" class="form-control"  placeholder="Nhập địa chỉ của bạn">
+                        </div>
                         <div class="mb-3">
                             <b><label for="exampleInputPassword1" class="form-label">Mật khẩu</label></b>
                             <input type="password" required name="password" id="InputPassword1" class="form-control"  placeholder="Nhập mật khẩu">

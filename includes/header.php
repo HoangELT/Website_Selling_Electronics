@@ -17,7 +17,7 @@ $page = $page - 1;
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DARKDO-STORE</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +32,7 @@ $page = $page - 1;
     <link rel="stylesheet" href="./assets/css/app.css">
     <link rel="shortcut icon" type="image/icon" href="logo/favicon.ico"/>
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    
+
      <!-- mobile menu -->
      <div class="mobile-menu bg-second">
             <a href="#" class="mb-logo">DARKDO</a>

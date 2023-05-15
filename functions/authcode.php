@@ -8,6 +8,7 @@ if(isset($_POST['register-btn']))
     $name= mysqli_real_escape_string($conn,$_POST['name']);
     $phone= mysqli_real_escape_string($conn,$_POST['phone']);
     $email= mysqli_real_escape_string($conn,$_POST['email']);
+    $address= mysqli_real_escape_string($conn,$_POST['address']);
     $password= mysqli_real_escape_string($conn,$_POST['password']);
     $cpassword= mysqli_real_escape_string($conn,$_POST['cpassword']);
 
@@ -26,7 +27,7 @@ if(isset($_POST['register-btn']))
             if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 //Inser user data
                 $pass_hash= password_hash($password,PASSWORD_DEFAULT);
-                $insert_query= "INSERT INTO `users` (`name`,`email`,`phone`,`password`) VALUES ('$name','$email','$phone','$pass_hash')";
+                $insert_query= "INSERT INTO `users` (`name`,`email`,`phone`, `address`,`password`) VALUES ('$name','$email','$phone','$address','$pass_hash')";
                 $insert_query_run=mysqli_query($conn,$insert_query);
                 if($insert_query_run){
                     redirect("../login.php", "Đăng ký tài khoản thành công");
@@ -71,7 +72,7 @@ else if(isset($_POST['login_btn']))
             $_SESSION['role_as']= $role_as;
             if($role_as == 1)
             {   
-                redirect("../admin/index.php", "Welcome to ADMIN ");
+                redirect("../admin/index.php", "Xin chào quản lý");
             }else
             {
                 redirect("../index.php", "Đăng nhập thành công");
@@ -130,10 +131,5 @@ else if(isset($_POST['update_user_btn']))
             redirect("../user-profile.php","Mật khẩu không khớp, vui lòng nhập lại");
         }
     }
-
-    
-
-   
-   
 }
 ?>

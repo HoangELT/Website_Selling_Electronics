@@ -217,7 +217,7 @@ CREATE TABLE `users` (
   `name` varchar(191) NOT NULL,
   `email` varchar(191) NOT NULL,
   `phone` varchar(15) NOT NULL,
-  `address` varchar(191) DEFAULT NULL,
+  `address` varchar(191) NOT NULL,
   `password` varchar(191) NOT NULL,
   `role_as` tinyint(4) NOT NULL DEFAULT '0',
   `creat_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -230,16 +230,16 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `address`, `password`, `role_as`, `creat_at`) VALUES
 (40, 'Đỗ Văn Hoàng', 'dovanhoang0805@gmail.com', '0984565225', 'Vũng Tàu', '$2y$10$.j/oJnzW4JEowa4q0o7G/urgACPfR75K7pgEnm0PsSigZSBfMjvEy', 1, '2023-04-16 17:56:45'),
 (41, 'Văn Thao1', 'vanthao@gmail.com', '0985625454', 'Số 334 Vĩnh Hưng, Hà Nội', '$2y$10$oUzY5b4qe/kWQwCRcRY26eUkGvf3a5x7vegf09FCWxdmH.4jXkGLG', 0, '2023-04-16 18:14:28'),
-(42, 'kha', 'tranthekha25062000@gmail.com', '0988269496', '500 nguyễn khoái', '$2y$10$82dTilIu2QKxuY/qxHjssefwL/Uvk21lRtxKriUoa205sWIJyAP7.', 0, '2023-04-15 18:29:06'),
+(42, 'kha', 'tranthekha25062000@gmail.com', '0988269496', 'Hà Nội', '$2y$10$82dTilIu2QKxuY/qxHjssefwL/Uvk21lRtxKriUoa205sWIJyAP7.', 0, '2023-04-15 18:29:06'),
 (43, 'Trần Trung Kiên', 'kien1234@gmail.com', '1234569852', 'Bình Thuận', '$2a$10$/UKT/4wU5E5WvdoFi1MqXe0KbG5FVQYTqhCCG9xKr0BnWuV02EYXy', 1, '2023-04-15 18:29:06'),
 (44, 'Đỗ Minh Đăng', 'dang123456@gmail.com', '0325696542', 'Lâm Đồng', '$2a$10$pgySx55FvOhxmxLMtBqWAOnDDu8uOSN4Lm/22bD4VsjoTwwUG3jmW', 1, '2023-04-16 09:58:30'),
 (45, 'Quang Huy', 'quanghuy@gmail.com', '0325684752', '440 Đ. Khương ĐìnhHạ Đình, Thanh Xuân, Hà Nội', '$2y$10$b4bPTCBAdcgn6SqbieUvG.BnI7m.rKEqRQGnnVDZ1oAkJZhfbwVEi', 0, '2023-04-16 09:59:05'),
 (46, 'Thùy Dung', 'thuydung@gmail.com', '0325847569', '334 P. Vĩnh HưngVĩnh Hưng, Hoàng Mai, Hà Nội', '$2y$10$9mc5zDtHX7rTnbbflvvXCed1l6fhXUF63CpmM4J8N5mIvtE7oIn7u', 0, '2023-04-16 09:59:27'),
 (47, 'Nguyễn Hồng', 'nguyenhong@gmail.com', '0986325478', '500 Nguyễn Khoái, Thanh Long, Hai Bà Trưng, Hà Nội', '$2y$10$M.OvNd.hOq.zbctjD3KYrufpycs46LVp73Q57.Xwj/vMxT4KFbxmC', 0, '2023-04-16 10:04:11'),
-(48, 'Phạm Tiến Bé Công', 'congphamtienthanh@gmail.com', '0973322098', NULL, '$2y$10$9tVJzRi9YAuNpN9ICFguHOApS4zPlKupMQ6sCk2a26q8B94zVO0l.', 0, '2023-04-16 13:17:43'),
-(49, 'Phạm công', 'phamtienthanhcong2@gmail.com', '0987654321', NULL, '$2y$10$QChpQSLjD9uRam4MmBRxqOBJvrj.DKJlK/FtdjpceFfmgfRRqNt.e', 0, '2023-04-16 07:38:27'),
-(50, 'Phạm Tiến Côgn', 'cong1@gmail.com', '0987654321', NULL, '$2y$10$g4MsJRVgBsNeKTrnpRd6M.mm3oBy9TO1zvHrvV2pD0QwiAvL0yA3y', 0, '2023-04-16 07:42:04'),
-(51, 'cong', 'cong@gmail.com', '0986535762', NULL, '$2y$10$Qh9v6Ew9TCeC6X5uAq3CceL.7SGyNWqZ74g8EdqKp/ymjWSnxHTyG', 0, '2023-04-16 14:05:13'),
+(48, 'Phạm Tiến Bé Công', 'congphamtienthanh@gmail.com', '0973322098', 'Thanh Xuân, Hải Phòng', '$2y$10$9tVJzRi9YAuNpN9ICFguHOApS4zPlKupMQ6sCk2a26q8B94zVO0l.', 0, '2023-04-16 13:17:43'),
+(49, 'Phạm công', 'phamtienthanhcong2@gmail.com', '0987654321', 'Kiên Giang', '$2y$10$QChpQSLjD9uRam4MmBRxqOBJvrj.DKJlK/FtdjpceFfmgfRRqNt.e', 0, '2023-04-16 07:38:27'),
+(50, 'Phạm Tiến Côgn', 'cong1@gmail.com', '0987654321', 'Cần Thơ', '$2y$10$g4MsJRVgBsNeKTrnpRd6M.mm3oBy9TO1zvHrvV2pD0QwiAvL0yA3y', 0, '2023-04-16 07:42:04'),
+(51, 'cong', 'cong@gmail.com', '0986535762', 'Nam Định', '$2y$10$Qh9v6Ew9TCeC6X5uAq3CceL.7SGyNWqZ74g8EdqKp/ymjWSnxHTyG', 0, '2023-04-16 14:05:13'),
 (52, 'pham tien cong', 'cong123@gmail.com', '03963213213', 'Quận 12, Tp Hồ Chí Minh', '$2y$10$.j/oJnzW4JEowa4q0o7G/urgACPfR75K7pgEnm0PsSigZSBfMjvEy', 0, '2023-04-16 08:36:48');
 --
 -- Chỉ mục cho các bảng đã đổ
