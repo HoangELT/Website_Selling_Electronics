@@ -19,6 +19,7 @@ include("../middleware/adminMiddleware.php");
   <!-- CSS Files -->
   <link id="pagestyle" href="assets/css/material-dashboard.min.css" rel="stylesheet" />
   <link id="pagestyle" href="assets/css/form.css" rel="stylesheet" />
+ <link rel="shortcut icon" type="image/icon" href="logo/favicon.ico"/>
 
   <!-- Alertify JS -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
