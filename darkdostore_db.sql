@@ -4,7 +4,6 @@
 --
 -- Máy chủ: localhost:3306
 -- Thời gian đã tạo: 14/4/2023 lúc 10:44 AM
--- Phiên bản máy phục vụ: 5.7.33
 -- Phiên bản PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -232,7 +231,8 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone`, `address`, `password`, `rol
 (40, 'Đỗ Văn Hoàng', 'dovanhoang0805@gmail.com', '0984565225', 'Vũng Tàu', '$2y$10$.j/oJnzW4JEowa4q0o7G/urgACPfR75K7pgEnm0PsSigZSBfMjvEy', 1, '2023-04-16 17:56:45'),
 (41, 'Văn Thao1', 'vanthao@gmail.com', '0985625454', 'Số 334 Vĩnh Hưng, Hà Nội', '$2y$10$oUzY5b4qe/kWQwCRcRY26eUkGvf3a5x7vegf09FCWxdmH.4jXkGLG', 0, '2023-04-16 18:14:28'),
 (42, 'kha', 'tranthekha25062000@gmail.com', '0988269496', '500 nguyễn khoái', '$2y$10$82dTilIu2QKxuY/qxHjssefwL/Uvk21lRtxKriUoa205sWIJyAP7.', 0, '2023-04-15 18:29:06'),
-(44, 'Văn Hoàng', 'vanhoang@gmail.com', '0325696542', '10 Ngh. 76/8 Dịch Vọng Hậu, Cầu Giấy, Hà Nội', '$2y$10$0FExz4HQ4KehVdATfRqbRur1i1IIXhbD5fXgZay2Sq6S98w9WvbnW', 0, '2023-04-16 09:58:30'),
+(43, 'Trần Trung Kiên', 'kien1234@gmail.com', '1234569852', 'Bình Thuận', '$2a$10$/UKT/4wU5E5WvdoFi1MqXe0KbG5FVQYTqhCCG9xKr0BnWuV02EYXy', 1, '2023-04-15 18:29:06'),
+(44, 'Đỗ Minh Đăng', 'dang123456@gmail.com', '0325696542', 'Lâm Đồng', '$2a$10$pgySx55FvOhxmxLMtBqWAOnDDu8uOSN4Lm/22bD4VsjoTwwUG3jmW', 1, '2023-04-16 09:58:30'),
 (45, 'Quang Huy', 'quanghuy@gmail.com', '0325684752', '440 Đ. Khương ĐìnhHạ Đình, Thanh Xuân, Hà Nội', '$2y$10$b4bPTCBAdcgn6SqbieUvG.BnI7m.rKEqRQGnnVDZ1oAkJZhfbwVEi', 0, '2023-04-16 09:59:05'),
 (46, 'Thùy Dung', 'thuydung@gmail.com', '0325847569', '334 P. Vĩnh HưngVĩnh Hưng, Hoàng Mai, Hà Nội', '$2y$10$9mc5zDtHX7rTnbbflvvXCed1l6fhXUF63CpmM4J8N5mIvtE7oIn7u', 0, '2023-04-16 09:59:27'),
 (47, 'Nguyễn Hồng', 'nguyenhong@gmail.com', '0986325478', '500 Nguyễn Khoái, Thanh Long, Hai Bà Trưng, Hà Nội', '$2y$10$M.OvNd.hOq.zbctjD3KYrufpycs46LVp73Q57.Xwj/vMxT4KFbxmC', 0, '2023-04-16 10:04:11'),
